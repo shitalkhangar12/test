@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Page1</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form action="/page2.html" name="myform" onsubmit="return validation()">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="fullname" placeholder="Your Full name..">
+                    <small id="fname"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your Email Address..">
+                    <small id="addr"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="phone" name="phone" maxlength="10" size="10" placeholder="Your Phone Number.." onblur="verify()">
+                    <small id="mob"></small>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" id="save" value=" Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="solve.js ">
+</script>
+
+</html>
